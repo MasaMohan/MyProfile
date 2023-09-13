@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    
     <style>
         h2{
             color: cadetblue; 
@@ -36,19 +40,39 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        h3,h4,#personal,.dummy{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        h3,h4,#personal,{font-family: 'Roboto Mono', monospace;
+            
         }
 
-        #personal{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
+        
         #developer{
             color: chocolate;
         }
 
-       
+       body{
+         
+       }
+
+       /* text formatting property */
+
+       .dummy{
+         text-transform: uppercase;
+         text-align: center;
+         letter-spacing: 5px;
+         text-decoration: underline;
+         font-family: 'Poppins', sans-serif;
+       }
+
+      .mainPara{ 
+        font-family: 'Poppins', sans-serif;
+
+      }
+      .tools{
+        /* border-style: solid;
+        border-width: 2px;
+        border-color: coral; */
+        border: 2px solid rgb(65, 184, 50)
+      }
 
 
 
@@ -56,7 +80,7 @@
 </head>
 <body>
     
-    <P style="color: green; font-size: larger; font-weight: bolder;"> When you join meetings, webinars, chats or channels hosted on Zoom, your profile information, including your name and profile picture, may be visible to other participants or members. Your name and email address will also be visible to the account owner and host when you join meetings, webinars, chats or channels on their account while you’re signed in. The account owner and others in the meeting, webinar, chat or channel can share this information with apps and others.</P>
+    <P class="mainPara" style="color: green; font-size: larger; font-weight: bolder;"> When you join meetings, webinars, chats or channels hosted on Zoom, your profile information, including your name and profile picture, may be visible to other participants or members. Your name and email address will also be visible to the account owner and host when you join meetings, webinars, chats or channels on their account while you’re signed in. The account owner and others in the meeting, webinar, chat or channel can share this information with apps and others.</P>
     <p style="color: ;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, hic.
     </p>
     <h2 id="personal">My Personal Details</h2>
@@ -66,8 +90,8 @@
     <p class="degree">Degree : B.com</p>
     <h3>Lorem, ipsum dolor.</h3>
     <h4>Lorem ipsum dolor sit.</h4>
-    <p class="dummy">Lorem ipsum dolor sit.</p>
+    <p class="dummy">Lorem ipsum dolor sit</p>
     <p>I am <span id="developer">UI Developer</span> having Experience of 4 years </p>
-
+    <p class="tools">I know tools: Git, Desktop Github, Agile and JIRA</p>
 </body>
 </html>
